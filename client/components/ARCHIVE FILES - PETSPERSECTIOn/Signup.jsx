@@ -55,7 +55,7 @@ class Signup extends Component {
 
     return (
       <div className='form-container'>
-        <h1>Petrospective</h1>
+        <h1>Woof!</h1>
         <div className='input-container'>
           <div className='input-group'>
             <label htmlFor='username'>Name:</label>

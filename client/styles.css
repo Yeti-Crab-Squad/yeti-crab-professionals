@@ -1,15 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Monoton&family=Shrikhand&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Monoton&family=Shrikhand&display=swap");
-:root {
-  --yellow: #ffefa0;
+/* :root {
+  /* --yellow: #ffefa0;
   --light-orange: #ffd57e;
   --orange: #fca652;
   --red: #ac4b1c;
+
+  //our colors 
+  --primaryBlue: #5AC4FF;
+  --secondaryBlue: #F3F8FF;
   --black: #222;
   --white: #fff;
+  --darkGray: #4A4A4A;
+  --lightGray: #575757;
+} 
+*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto';
+	color: black;
+	color: #636363;
 }
 
+#app {
+	width: 100%;
+}
+
+body {
+	background-color: #f3f8ff;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+/* OLD SITE STYLING */
+/* 
 * {
   box-sizing: border-box;
   margin: 0;
@@ -114,7 +144,7 @@ li {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 10px;
-  /* align-items: flex-start; */
+  /* align-items: flex-start; 
 }
 .title-date h3 {
   align-self: center;
@@ -159,4 +189,4 @@ li {
 
 .uncompleted-post-form button {
   margin-bottom: 20px;
-}
+} */

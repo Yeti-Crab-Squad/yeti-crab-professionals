@@ -5,16 +5,24 @@ module.exports = {
   mode: process.env.NODE_ENV,
   entry: './client/index.js',
   output: {
-    path: path.join(__dirname, 'build'),
+    path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
+    publicPath: '/'
   },
 
   devServer: {
-    publicPath: '/build',
-    proxy: {
-      '/api/': 'http://localhost:3000',
+    contentBase: path.resolve(__dirname, "build"),
+    historyApiFallback: true,
+    headers: {
+      "Access-Control-Allow-Origin": "*"
     },
-    port: 8080,
+    proxy: {
+      '/' : {
+        target: 'http://localhost:3000',
+        secure: false
+      }
+    },
+    port: 8080
   },
   module: {
     rules: [
